@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Portfolio site for showcasing projects and skills"
+        />
+        <title>Coursera Project - Web Development Portfolio</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <header role="banner">
+            <nav role="navigation">
+                <ul role="list">
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>
+                Hello I am Sondre, I create frontend apps for my own leisure.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Here are some notable hobby projects I have done.</p>
+            <p style="color: gray;">(These are just example projects, I have not actually done them.)</p>
+            <article role="article">
+                <h3>Project 1: Todo-list app</h3>
+                <figure>
+                    <img src="project1.jpg" alt="Screenshot of Project 1" />
+                    <figcaption>Picture of the app dashboard.</figcaption>
+                </figure>
+            </article>
+            <article role="article">
+                <h3>Project 2: Celsius to Fahrenheit converter</h3>
+                <figure>
+                    <img src="project2.jpg" alt="Screenshot of Project 2" />
+                    <figcaption>Example picture of temperature being converted.</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul role="list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>C#</li>
+                <li>Protoshop</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact me!</h2>
+            <form action="submit_form.php" method="post" role="form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required />
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>Find with me on social media</p>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank"
+                            >LinkedIn</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/yourprofile" target="_blank">X</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <script>
+        </script>
+    </body>
+</html>
