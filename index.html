@@ -13,6 +13,7 @@
     <body>
         <header role="banner">
             <nav role="navigation">
+                <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
                 <ul role="list">
                     <li><a href="#about-me">About Me</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -96,6 +97,10 @@
         </footer>
 
         <script>
+            function toggleMenu() {
+                const navUl = document.querySelector('nav ul');
+                navUl.classList.toggle('show');
+            }
         </script>
     </body>
 </html>

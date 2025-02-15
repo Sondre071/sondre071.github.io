@@ -11,14 +11,17 @@ html, body {
 }
 
 header {
-  background: #333;
+  -webkit-background: #333; /* Safari */
+  -moz-background: #333; /* Firefox */
+  -ms-background: #333; /* Internet Explorer */
+  -o-background: #333; /* Opera */
+  background: #333; /* Standard */
   color: #fff;
   height: 4rem;
   margin: 0;
   text-align: center;
   position: fixed;
   width: 100%;
-
 }
 
 nav ul {
@@ -45,8 +48,8 @@ section {
 }
 
 #about-me {
-    padding-top: 4rem;
-    margin-top: 0;
+  padding-top: 4rem;
+  margin-top: 0;
 }
 
 h2 {
@@ -77,13 +80,17 @@ footer {
   margin: 0 10px;
 }
 
-.social-links li a {
+social-links li a {
   color: #fff;
   text-decoration: none;
 }
 
 form {
-  display: flex;
+  display: -webkit-box; /* Safari */
+  display: -moz-box; /* Firefox */
+  display: -ms-flexbox; /* Internet Explorer */
+  display: -webkit-flex; /* Safari */
+  display: flex; /* Standard */
   flex-direction: column;
 }
 
@@ -93,22 +100,71 @@ form label {
 
 form input,
 form textarea {
+  -webkit-border-radius: 5px; /* Safari */
+  -moz-border-radius: 5px; /* Firefox */
+  border-radius: 5px; /* Standard */
   padding: 10px;
   margin-top: 5px;
   border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 form button {
+  -webkit-border-radius: 5px; /* Safari */
+  -moz-border-radius: 5px; /* Firefox */
+  border-radius: 5px; /* Standard */
   margin-top: 10px;
   padding: 10px;
   background: #333;
   color: #fff;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 
 form button:hover {
   background: #555;
+}
+
+/* Ensure images and videos are responsive */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query for screens with a max-width of 768px */
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 1rem;
+  }
+
+  nav ul {
+    display: none; /* Hide the navigation menu */
+  }
+
+  nav .hamburger-menu {
+    display: block; /* Show the hamburger menu icon */
+    cursor: pointer;
+  }
+
+  nav ul.show {
+    display: block; /* Show the navigation menu when the hamburger menu is clicked */
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+}
+
+/* Hamburger menu icon */
+.hamburger-menu {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
 }
