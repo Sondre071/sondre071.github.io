@@ -41,10 +41,11 @@ nav ul li a {
 
 section {
   padding: 1rem 2rem;
-  margin: 1rem 0.5rem;
+  margin: 1rem auto;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 1000px; /* Add this line */
 }
 
 #about-me {
@@ -130,6 +131,13 @@ img, video {
   height: auto;
 }
 
+/* Media query for screens with a max-width of 1024px */
+@media (max-width: 1024px) {
+  section {
+    max-width: 900px; /* Adjust max-width */
+  }
+}
+
 /* Media query for screens with a max-width of 768px */
 @media (max-width: 768px) {
   header {
@@ -171,6 +179,14 @@ img, video {
   section {
     padding: 1rem;
     margin: 0.5rem;
+    max-width: 600px; /* Adjust max-width */
+  }
+}
+
+/* Media query for screens with a max-width of 480px */
+@media (max-width: 480px) {
+  section {
+    max-width: 100%; /* Full width for small screens */
   }
 }
 
